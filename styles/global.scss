@@ -1,16 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     outline: 0;
     box-sizing: border-box;
+    font-family: "Rubik", serif;
   }
 
 
   body{
-
+background: #1A1A1A;
   }
 
   
   #__next {
     overflow-x: hidden;
+  }
+
+
+.MuiButton-contained{
+padding: 15px 35px !important;
+border-radius: 50px !important;
+background-color: #030304 !important;
+box-shadow: none !important;
+border: 1px solid #696969 !important;
+font-size: 14px !important;
+font-weight: 700 !important;
+color: rgba(255, 255, 255, 0.5) !important;
+transition: all 0.3s ease-in-out !important;
+&:hover{
+  color: #FF9142 !important;
+  border: 1px solid #FF9142 !important;
+}
   }
