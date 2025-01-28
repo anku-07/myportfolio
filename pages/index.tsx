@@ -1,6 +1,6 @@
 import { Rubik, Syne } from "next/font/google";
 import Wrapper from "@/layout/Wrapper/Wrapper";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Container } from "@mui/material";
 
 export const rubik = Rubik({
   weight: ["400", "500", "600", "700"],
@@ -18,9 +18,13 @@ export const syne = Syne({
 export default function Home() {
   return (
     <Wrapper>
-      <Box>
-        <Typography variant="body1">hello</Typography>
-      </Box>
+      <Container fixed>
+        <Box>
+          <Typography variant="h1">
+            End-to-End Development, Seamless Results
+          </Typography>
+        </Box>
+      </Container>
     </Wrapper>
   );
 }
