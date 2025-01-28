@@ -43,4 +43,7 @@ export const primaryColors = {
   colorF6EFF8: "#F6EFF8",
   colorfdf8ff: "#fdf8ff",
   color2F3240: "#2F3240",
+  footerbg: "#131313",
+  colorFF9142: "#FF9142",
+  color949494: "#949494",
 };

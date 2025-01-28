@@ -8,15 +8,34 @@
     font-family: "Rubik", serif;
   }
 
-
-  body{
+body{
 background: #1A1A1A;
-  }
+}
 
   
   #__next {
     overflow-x: hidden;
   }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF9142;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 
 .MuiButton-contained{
@@ -34,3 +53,5 @@ transition: all 0.3s ease-in-out !important;
   border: 1px solid #FF9142 !important;
 }
   }
+
+
