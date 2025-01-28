@@ -1,3 +1,4 @@
+import asset from "@/json/asset";
 import { HeaderWrap } from "@/styles/StyledComponents/HeaderWrap";
 import {
   AppBar,
@@ -11,6 +12,7 @@ import {
   List,
   ListItem,
 } from "@mui/material";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -45,7 +47,12 @@ const Header = () => {
             <MenuIcon />
           </IconButton> */}
             <Link href="/" className="headerLogo">
-              logo
+              <Image
+                src={asset.headLogo}
+                width={125}
+                height={22}
+                alt="headLogo"
+              />
             </Link>
             <Box className="nav_bar">
               <List disablePadding>
