@@ -36,6 +36,7 @@ const ProjectsComp = () => {
                   />
                 </figure>
               </Link>
+              
             </Grid2>
             <Grid2 size={{ md: 6, xs: 12 }}>
               <Link href="">
