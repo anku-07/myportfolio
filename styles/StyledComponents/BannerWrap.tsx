@@ -23,6 +23,24 @@ export const BannerWrap = styled(Box)`
     font-size: 72px;
     font-weight: 700;
     color: ${primaryColors.white};
+    /* width: 100%; */
+    /* border-right: 5px solid; */
+    /* white-space: nowrap;
+    overflow: hidden; */
+    /* animation:
+      typing 2s,
+      cursor 0.4s step-end infinite alternate; */
+  }
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
   }
   .btnWrap {
     margin-top: 90px;
