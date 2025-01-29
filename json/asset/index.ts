@@ -7,4 +7,6 @@ export default {
   developerImg: "/assets/images/developerImg.png",
   topRectangle: "/assets/images/topRectangle.png",
   leftRectangle: "/assets/images/leftRectangle.png",
+  project1: "/assets/images/project1.png",
+  project2: "/assets/images/project2.png",
 };
