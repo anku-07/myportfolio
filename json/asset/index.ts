@@ -4,4 +4,7 @@ export default {
   logo_img: "/assets/images/logo_img.png",
   ftr_logo: "/assets/images/ftr_logo.svg",
   headLogo: "/assets/images/headLogo.svg",
+  developerImg: "/assets/images/developerImg.png",
+  topRectangle: "/assets/images/topRectangle.png",
+  leftRectangle: "/assets/images/leftRectangle.png",
 };
