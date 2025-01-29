@@ -1,6 +1,5 @@
 import { Rubik, Syne } from "next/font/google";
 import Wrapper from "@/layout/Wrapper/Wrapper";
-import { Box, Typography, Container } from "@mui/material";
 import Banner from "@/components/Banner/Banner";
 
 export const rubik = Rubik({
