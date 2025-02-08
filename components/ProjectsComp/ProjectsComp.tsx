@@ -1,14 +1,25 @@
 import { ProjectsCompStyle } from "@/styles/StyledComponents/ProjectsCompStyle";
-import React from "react";
+import React, { CSSProperties, useState } from "react";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { Box, Button, Grid2 } from "@mui/material";
 import RightArrowIcon from "@/ui/Icons/RightArrowIcon";
-import Link from "next/link";
-import Image from "next/image";
-import asset from "@/json/asset";
+
+import ProjectCard from "../ProjectCard/ProjectCard";
+import { projectCardData } from "@/json/mock/demo.mock";
+import { HashLoader } from "react-spinners";
 
 const ProjectsComp = () => {
+  const [loadMore, setLoadMore] = useState(false);
+  const [color, setColor] = useState("#ffffff");
+  const handelLoadMore = () => {
+    setLoadMore(true);
+  };
+
+  const override: CSSProperties = {
+
+  }
+
   return (
     <ProjectsCompStyle className="cmnGap">
       <Container fixed>
@@ -23,34 +34,34 @@ const ProjectsComp = () => {
           </Button>
         </Box>
 
-        <Box className="project_blk">
-          <Grid2 container columnSpacing={3} rowSpacing={10}>
-            <Grid2 size={{ md: 6, xs: 12 }}>
-              <Link href="">
-                <figure>
-                  <Image
-                    src={asset.project1}
-                    width={560}
-                    height={620}
-                    alt="project1"
-                  />
-                </figure>
-              </Link>
-              
-            </Grid2>
-            <Grid2 size={{ md: 6, xs: 12 }}>
-              <Link href="">
-                <figure>
-                  <Image
-                    src={asset.project2}
-                    width={560}
-                    height={620}
-                    alt="project1"
-                  />
-                </figure>
-              </Link>
-            </Grid2>
+        <Box className="projects">
+          <Grid2 container columnSpacing={3} rowSpacing={5}>
+            {projectCardData.map((data, index) => (
+              <Grid2 size={{ md: 6, xs: 12 }}>
+                <ProjectCard
+                  image={data.image}
+                  link={data.link}
+                  projectTitle={data.projectTitle}
+                />
+              </Grid2>
+            ))}
           </Grid2>
+        </Box>
+        <Box className="loading_blk">
+          <Button onClick={handelLoadMore} disableRipple>
+            {loadMore ? (
+              <HashLoader
+                color={color}
+                loading={loadMore}
+                size={30}
+                cssOverride={override}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
+            ) : (
+              "  Load More"
+            )}
+          </Button>
         </Box>
       </Container>
     </ProjectsCompStyle>

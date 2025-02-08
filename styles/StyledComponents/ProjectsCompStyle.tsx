@@ -12,6 +12,10 @@ export const ProjectsCompStyle = styled(Box)`
     margin-bottom: 20px;
   }
 
+  .projects {
+    margin-top: 80px;
+  }
+
   .outlinedPrimary {
     min-width: auto;
     padding: 22px 45px;
@@ -28,18 +32,22 @@ export const ProjectsCompStyle = styled(Box)`
     }
   }
 
-  .project_blk {
-    margin-top: 80px;
-    a {
-      figure {
-        line-height: 0;
+  .loading_blk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
 
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 16px;
-        }
+    button {
+      min-width: auto;
+      padding: 0;
+      color: ${primaryColors.white};
+      font-family: ${syne.style.fontFamily};
+      font-weight: 700;
+      text-transform: capitalize;
+      font-size: 20px;
+      &:hover {
+        background: transparent;
       }
     }
   }

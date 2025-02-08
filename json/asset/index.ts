@@ -9,4 +9,6 @@ export default {
   leftRectangle: "/assets/images/leftRectangle.png",
   project1: "/assets/images/project1.png",
   project2: "/assets/images/project2.png",
+  project3: "/assets/images/project3.png",
+  project4: "/assets/images/project4.png",
 };
