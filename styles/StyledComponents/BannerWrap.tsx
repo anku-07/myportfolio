@@ -4,7 +4,7 @@ import { Box, styled } from "@mui/material";
 
 export const BannerWrap = styled(Box)`
   text-align: center;
-  padding: 100px 40px;
+  padding: 100px 0 40px;
   position: relative;
 
   &::before {
@@ -20,7 +20,7 @@ export const BannerWrap = styled(Box)`
   }
   h1 {
     font-family: ${syne.style.fontFamily};
-    font-size: 72px;
+    font-size: 4.6875vw;
     font-weight: 700;
     color: ${primaryColors.white};
     /* width: 100%; */

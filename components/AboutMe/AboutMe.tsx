@@ -43,7 +43,7 @@ const AboutMe = () => {
                 className="leftImg"
               />
               <Image
-                src={asset.developerImg}
+                src={asset.myImg}
                 width={454}
                 height={506}
                 alt="developerImg"

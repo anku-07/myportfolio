@@ -18,7 +18,7 @@ export const AboutMeWrap = styled(Box)`
       top: -40px;
     }
     h2 {
-      font-size: 56px;
+      font-size: 3.6vw;
       font-weight: 700;
       font-family: ${syne.style.fontFamily};
       color: ${primaryColors.white};

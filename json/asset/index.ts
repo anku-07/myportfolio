@@ -19,4 +19,6 @@ export default {
   myworksImg6: "/assets/images/myworksImg6.png",
   myworksImg7: "/assets/images/myworksImg7.png",
   myworksImg8: "/assets/images/myworksImg8.png",
+
+  myImg: "/assets/images/myImg.jpg",
 };
