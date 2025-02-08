@@ -11,14 +11,12 @@ import { HashLoader } from "react-spinners";
 
 const ProjectsComp = () => {
   const [loadMore, setLoadMore] = useState(false);
-  const [color, setColor] = useState("#ffffff");
+  const [color] = useState("#ffffff");
   const handelLoadMore = () => {
     setLoadMore(true);
   };
 
-  const override: CSSProperties = {
-
-  }
+  const override: CSSProperties = {};
 
   return (
     <ProjectsCompStyle className="cmnGap">
@@ -37,7 +35,7 @@ const ProjectsComp = () => {
         <Box className="projects">
           <Grid2 container columnSpacing={3} rowSpacing={5}>
             {projectCardData.map((data, index) => (
-              <Grid2 size={{ md: 6, xs: 12 }}>
+              <Grid2 size={{ md: 6, xs: 12 }} key={index}>
                 <ProjectCard
                   image={data.image}
                   link={data.link}

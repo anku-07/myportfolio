@@ -1,4 +1,3 @@
-import asset from "@/json/asset";
 import { ProjectCardWrap } from "@/styles/StyledComponents/ProjectCardWrap";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
