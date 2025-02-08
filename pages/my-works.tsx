@@ -6,7 +6,7 @@ import React from "react";
 const MyWorks = () => {
   return (
     <Wrapper>
-      <CommonHead />
+      <CommonHead headText="My works" subText="Showcase About Works"/>
       <MyWorkComp />
     </Wrapper>
   );
