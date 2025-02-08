@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 const navItems = [
@@ -32,20 +33,14 @@ const navItems = [
 ];
 
 const Header = () => {
+  const router = useRouter();
+
   return (
     <HeaderWrap>
       <AppBar position="static" component="nav" className="headercontainer">
         <Container fixed>
           <Toolbar>
-            {/* <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton> */}
+
             <Link href="/" className="headerLogo">
               <Image
                 src={asset.headLogo}
@@ -64,7 +59,12 @@ const Header = () => {
               </List>
             </Box>
             <Box className="hdr_rgt">
-              <Button type="button" variant="contained" color="primary">
+              <Button
+                type="button"
+                variant="contained"
+                color="primary"
+                onClick={() => router.push("/contact")}
+              >
                 Contact
               </Button>
             </Box>
