@@ -27,7 +27,7 @@ const navItems = [
   },
   {
     itemName: "My works",
-    route: "/",
+    route: "/my-works",
   },
 ];
 

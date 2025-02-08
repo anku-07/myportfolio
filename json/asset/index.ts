@@ -11,4 +11,12 @@ export default {
   project2: "/assets/images/project2.png",
   project3: "/assets/images/project3.png",
   project4: "/assets/images/project4.png",
+  myworksImg1: "/assets/images/myworksImg1.png",
+  myworksImg2: "/assets/images/myworksImg2.png",
+  myworksImg3: "/assets/images/myworksImg3.png",
+  myworksImg4: "/assets/images/myworksImg4.png",
+  myworksImg5: "/assets/images/myworksImg5.png",
+  myworksImg6: "/assets/images/myworksImg6.png",
+  myworksImg7: "/assets/images/myworksImg7.png",
+  myworksImg8: "/assets/images/myworksImg8.png",
 };
