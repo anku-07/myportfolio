@@ -60,6 +60,7 @@ const ProjectsComp = () => {
               "  Load More"
             )}
           </Button>
+          
         </Box>
       </Container>
     </ProjectsCompStyle>
