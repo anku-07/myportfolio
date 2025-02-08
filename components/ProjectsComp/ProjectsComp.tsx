@@ -1,5 +1,5 @@
 import { ProjectsCompStyle } from "@/styles/StyledComponents/ProjectsCompStyle";
-import React, { CSSProperties, useState } from "react";
+import React, { useState } from "react";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { Box, Button, Grid2 } from "@mui/material";
@@ -15,8 +15,6 @@ const ProjectsComp = () => {
   const handelLoadMore = () => {
     setLoadMore(true);
   };
-
-  const override: CSSProperties = {};
 
   return (
     <ProjectsCompStyle className="cmnGap">
@@ -52,7 +50,6 @@ const ProjectsComp = () => {
                 color={color}
                 loading={loadMore}
                 size={30}
-                cssOverride={override}
                 aria-label="Loading Spinner"
                 data-testid="loader"
               />
@@ -60,7 +57,6 @@ const ProjectsComp = () => {
               "  Load More"
             )}
           </Button>
-          
         </Box>
       </Container>
     </ProjectsCompStyle>

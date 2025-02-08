@@ -1,11 +1,18 @@
 import { MyWorkCompStyle } from "@/styles/StyledComponents/MyWorkCompStyle";
-import React from "react";
+import React, { useState } from "react";
 import Container from "@mui/material/Container";
-import { Box, Grid2 } from "@mui/material";
+import { Box, Button, Grid2 } from "@mui/material";
 import MyWorksCard from "../MyWorksCard/MyWorksCard";
 import { myWorksCardData } from "@/json/mock/demo.mock";
+import { HashLoader } from "react-spinners";
 
 const MyWorkComp = () => {
+  const [loadMore, setLoadMore] = useState(false);
+  const [color] = useState("#ffffff");
+  const handelLoadMore = () => {
+    setLoadMore(true);
+  };
+
   return (
     <MyWorkCompStyle>
       <Container fixed>
@@ -20,6 +27,22 @@ const MyWorkComp = () => {
               </Grid2>
             ))}
           </Grid2>
+        </Box>
+
+        <Box className="loading_blk">
+          <Button onClick={handelLoadMore} disableRipple>
+            {loadMore ? (
+              <HashLoader
+                color={color}
+                loading={loadMore}
+                size={30}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
+            ) : (
+              "  Load More"
+            )}
+          </Button>
         </Box>
       </Container>
     </MyWorkCompStyle>
