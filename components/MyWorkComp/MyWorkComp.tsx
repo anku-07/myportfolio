@@ -12,7 +12,10 @@ const MyWorkComp = () => {
         <Box className="worksBlk">
           <Grid2 container spacing={4}>
             {myWorksCardData.map((data, index) => (
-              <Grid2 size={{ md: 4 }} key={index}>
+              <Grid2
+                size={{ lg: data.gridSize, md: 6, sm: 6, xs: 12 }}
+                key={index}
+              >
                 <MyWorksCard {...data} />
               </Grid2>
             ))}
