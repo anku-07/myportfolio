@@ -1,4 +1,4 @@
-import asset from "@/json/asset";
+
 import { MyWorksCardWrap } from "@/styles/StyledComponents/MyWorksCardWrap";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
