@@ -17,6 +17,10 @@ export const InputFieldCommonStyle = styled(Box)`
     padding: 15px 0 5px;
     font-size: 18px;
     color: ${primaryColors.white};
+
+    @media (max-width: 899px) {
+      font-size: 16px;
+    }
     input {
       padding: 0;
     }

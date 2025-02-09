@@ -36,7 +36,7 @@ const Footer = () => {
           <Link href="mailto:techadi960@gmail.com">techadi960@gmail.com</Link>
         </Box>
         <Box className="ftr_middle">
-          <Grid2 container spacing={5}>
+          <Grid2 container spacing={{ md: 5, sm: 3, xs: 2 }}>
             <Grid2 size={{ md: 5 }}>
               <Box>
                 <Link href="/" className="footer_logo">

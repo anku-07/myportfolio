@@ -13,6 +13,9 @@ export const FooterWrap = styled(Box)`
   @media (max-width: 1199px) {
     padding: 60px 0 50px;
   }
+  @media (max-width: 899px) {
+    padding: 40px 0;
+  }
 
   .ftr_top {
     text-align: center;
@@ -21,6 +24,13 @@ export const FooterWrap = styled(Box)`
       font-family: ${syne.style.fontFamily};
       font-size: 24px;
       font-weight: 700;
+      @media (max-width: 899px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 599px) {
+        font-size: 18px;
+      }
     }
     a {
       font-family: ${syne.style.fontFamily};
@@ -38,6 +48,13 @@ export const FooterWrap = styled(Box)`
       @media (max-width: 1199px) {
         font-size: 45px;
       }
+      @media (max-width: 899px) {
+        font-size: 35px;
+      }
+
+      @media (max-width: 599px) {
+        font-size: 25px;
+      }
     }
   }
 
@@ -50,6 +67,12 @@ export const FooterWrap = styled(Box)`
     }
     @media (max-width: 1199px) {
       padding: 100px 0 50px;
+    }
+    @media (max-width: 899px) {
+      padding: 50px 0;
+    }
+    @media (max-width: 599px) {
+      padding: 30px 0;
     }
 
     &::before {
@@ -67,6 +90,13 @@ export const FooterWrap = styled(Box)`
         font-size: 24px;
         font-weight: 700;
         font-family: ${syne.style.fontFamily};
+
+        @media (max-width: 899px) {
+          font-size: 18px;
+        }
+        @media (max-width: 599px) {
+          font-size: 16px;
+        }
       }
     }
 
@@ -83,6 +113,13 @@ export const FooterWrap = styled(Box)`
         &:hover {
           color: ${primaryColors.primary};
         }
+
+        @media (max-width: 899px) {
+          font-size: 18px;
+        }
+        @media (max-width: 599px) {
+          font-size: 16px;
+        }
       }
 
       ul {
@@ -98,6 +135,21 @@ export const FooterWrap = styled(Box)`
     }
   }
 
+  .footer_logo {
+    @media (max-width: 899px) {
+      display: inline-block;
+      width: 140px;
+    }
+
+    @media (max-width: 599px) {
+      width: 100px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
   .copyBlk {
     text-align: center;
     padding-top: 20px;
@@ -106,6 +158,13 @@ export const FooterWrap = styled(Box)`
       font-weight: 700;
       color: ${primaryColors.white};
       font-family: ${syne.style.fontFamily};
+
+      @media (max-width: 899px) {
+        font-size: 20px;
+      }
+      @media (max-width: 599px) {
+        font-size: 16px;
+      }
     }
   }
 `;

@@ -56,6 +56,9 @@ transition: all 0.3s ease-in-out !important;
 @media (max-width : 1199px){
 padding: 10px 25px !important;
 }
+@media (max-width : 899px){
+  padding: 8px 20px !important;
+  }
   }
 
 
@@ -78,4 +81,12 @@ padding: 10px 25px !important;
     
   padding: 60px 0;
   }
+  @media (max-width :899px){
+    
+    padding: 40px 0;
+    }
+    @media (max-width :599px){
+    
+      padding: 20px 0;
+      }
 }

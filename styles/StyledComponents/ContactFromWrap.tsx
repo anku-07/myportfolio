@@ -8,6 +8,19 @@ export const ContactFromWrap = styled(Box)`
     font-weight: 700;
     font-family: ${syne.style.fontFamily};
     color: ${primaryColors.white};
+
+    @media (max-width: 1439px) {
+      font-size: 56px;
+    }
+    @media (max-width: 1199px) {
+      font-size: 46px;
+    }
+    @media (max-width: 899px) {
+      font-size: 36px;
+    }
+    @media (max-width: 599px) {
+      font-size: 25px;
+    }
   }
   .each_input_blk {
     .label {
@@ -17,6 +30,13 @@ export const ContactFromWrap = styled(Box)`
       text-transform: uppercase;
       color: ${primaryColors.white};
       line-height: 1;
+
+      @media (max-width: 899px) {
+        font-size: 20px;
+      }
+      @media (max-width: 599px) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -36,6 +56,15 @@ export const ContactFromWrap = styled(Box)`
       background: transparent;
 
       color: ${primaryColors.primary};
+    }
+
+    @media (max-width: 899px) {
+      padding: 5px 30px;
+      font-size: 20px;
+    }
+    @media (max-width: 599px) {
+      padding: 5px 20px;
+      font-size: 18px;
     }
   }
 `;
