@@ -7,6 +7,13 @@ export const FooterWrap = styled(Box)`
 
   padding: 100px 0 50px;
 
+  @media (max-width: 1439px) {
+    padding: 80px 0 50px;
+  }
+  @media (max-width: 1199px) {
+    padding: 60px 0 50px;
+  }
+
   .ftr_top {
     text-align: center;
     p {
@@ -24,12 +31,26 @@ export const FooterWrap = styled(Box)`
       &:hover {
         color: ${primaryColors.colorFF9142};
       }
+
+      @media (max-width: 1439px) {
+        font-size: 55px;
+      }
+      @media (max-width: 1199px) {
+        font-size: 45px;
+      }
     }
   }
 
   .ftr_middle {
     padding: 200px 0 50px;
     position: relative;
+
+    @media (max-width: 1439px) {
+      padding: 150px 0 50px;
+    }
+    @media (max-width: 1199px) {
+      padding: 100px 0 50px;
+    }
 
     &::before {
       content: "";

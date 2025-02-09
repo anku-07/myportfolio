@@ -29,6 +29,11 @@ export const AboutMeWrap = styled(Box)`
       font-family: ${rubik.style.fontFamily};
       color: ${primaryColors.colorA8A8A8};
       margin: 20px 0 40px;
+
+      @media (max-width: 1199px) {
+        margin: 20px 0;
+        font-size: 16px;
+      }
     }
   }
 
@@ -72,6 +77,9 @@ export const AboutMeWrap = styled(Box)`
       border: 1px solid ${primaryColors.primary};
       background: transparent;
       padding-right: 60px;
+    }
+    @media (max-width: 1199px) {
+      padding: 14.5px 24px;
     }
   }
 `;

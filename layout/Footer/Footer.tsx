@@ -71,7 +71,7 @@ const Footer = () => {
         </Box>
         <Box className="copyBlk">
           <Typography variant="body1">
-            © 2023. Ideapeel. All rights reserved.{" "}
+            © 2025. Ideapeel. All rights reserved.{" "}
           </Typography>
         </Box>
       </Container>

@@ -7,6 +7,10 @@ export const BannerWrap = styled(Box)`
   padding: 100px 0 40px;
   position: relative;
 
+  @media (max-width: 1199px) {
+    padding: 60px 0 40px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -44,6 +48,10 @@ export const BannerWrap = styled(Box)`
   }
   .btnWrap {
     margin-top: 90px;
+
+    @media (max-width: 1199px) {
+      margin-top: 40px;
+    }
   }
 
   .containedPrimary {
@@ -59,6 +67,9 @@ export const BannerWrap = styled(Box)`
       border: 1px solid ${primaryColors.primary};
       background: transparent;
       padding-right: 60px;
+    }
+    @media (max-width: 1199px) {
+      padding: 14.5px 24px;
     }
   }
 `;

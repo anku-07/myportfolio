@@ -14,6 +14,10 @@ export const ProjectsCompStyle = styled(Box)`
 
   .projects {
     margin-top: 80px;
+
+    @media (max-width: 1199px) {
+      margin-top: 40px;
+    }
   }
 
   .outlinedPrimary {
@@ -29,6 +33,10 @@ export const ProjectsCompStyle = styled(Box)`
     &:hover {
       background: ${primaryColors.primary};
       padding-right: 60px;
+    }
+
+    @media (max-width: 1199px) {
+      padding: 14px 25px;
     }
   }
 
@@ -48,6 +56,10 @@ export const ProjectsCompStyle = styled(Box)`
       font-size: 20px;
       &:hover {
         background: transparent;
+      }
+
+      @media (max-width: 1199px) {
+        font-size: 18px;
       }
     }
   }

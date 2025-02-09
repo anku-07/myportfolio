@@ -7,6 +7,14 @@ export const HeaderWrap = styled(Box)`
     background-color: transparent;
     box-shadow: none;
     padding: 30px 0;
+
+    @media (max-width: 1199px) {
+      padding: 10px 0;
+    }
+  }
+  .MuiToolbar-root {
+    min-height: auto;
+    padding: 0;
   }
 
   .headerLogo {
@@ -16,6 +24,9 @@ export const HeaderWrap = styled(Box)`
 
   .nav_bar {
     margin-left: auto;
+    @media (max-width: 899px) {
+      display: none;
+    }
     ul {
       display: flex;
       align-items: center;
@@ -42,5 +53,21 @@ export const HeaderWrap = styled(Box)`
 
   .hdr_rgt {
     margin-left: 55px;
+
+    @media (max-width: 899px) {
+      margin-left: auto;
+    }
+  }
+
+  .hambar {
+    button {
+      min-width: auto;
+      padding: 0;
+    }
+    display: none;
+    margin-left: 20px;
+    @media (max-width: 899px) {
+      display: block;
+    }
   }
 `;
