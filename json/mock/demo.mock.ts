@@ -26,15 +26,15 @@ export const projectCardData = [
 export const myWorksCardData = [
   {
     image: asset.myworksImg1,
-    link: "",
-    subTitle: "blue",
+    link: "https://codepen.io/coding-chora/pen/NPWWwYZ",
+    subTitle: "Slider",
     head: "Orvillebury",
     gridSize: 4,
   },
   {
     image: asset.myworksImg2,
-    link: "",
-    subTitle: "green",
+    link: "https://codepen.io/coding-chora/pen/PwooOVL?editors=1010",
+    subTitle: "Premium Card",
     head: "West Lavada",
     gridSize: 4,
   },

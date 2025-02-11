@@ -10,6 +10,7 @@ interface myWorkCardProps {
   link: string;
   subTitle: string;
   head: string;
+  
 }
 
 const MyWorksCard = ({image,link,subTitle,head}: myWorkCardProps) => {
